@@ -1,16 +1,40 @@
-# melody_maker
+# Melody Studio 🎹
 
-A new Flutter project.
+> **Diseña, escucha y exporta** tus propias melodías desde el teléfono o el navegador,  
+> usando un teclado virtual y una línea de tiempo interactiva.
 
-## Getting Started
+![preview](https://github.com/leonardos4enz/melody_maker_app/blob/main/assets/melody_maker_app.jpeg)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Características
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Módulo                | Descripción                                                                                           |
+|-----------------------|--------------------------------------------------------------------------------------------------------|
+| **Selector de valor** | `ChoiceChip` para cambiar la duración _(16n · 8n · 4n · 4n. · 2n · 2n.)_                              |
+| **Teclado en grid**   | 24 notas (C4 – B5) en cuadrícula **4 × N**<br>• **Tap ➜ pre-escucha**<br>• **＋ ➜ añadir a la pista** |
+| **Timeline**          | Pista siempre visible en la parte inferior; chips editables y eliminables                             |
+| **Instrumentos GM**   | Selector modal con instrumentos General-MIDI (Flauta, Piano, Violín, Saxofón, etc.)                    |
+| **Sonido realista**   | Motor MIDI basado en SoundFont **FluidR3 GM** + `flutter_midi_pro`                                     |
+| **Material You**      | Interfaz Google Fonts + esquema de color dinámico                                                     |
+| **Plataformas**       | Android • iOS (beta) • Web • Desktop (Flutter 3.10 +)                                                  |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Stack técnico
+
+- **Flutter 3.10 +** (`useMaterial3: true`)
+- **google_fonts** – tipografía *Inter*
+- **flutter_midi_pro** – reproducción MIDI
+- **path_provider** – manejo de archivos temporales
+- **Dart 3 null-safe**
+
+---
+
+## 📦 Instalación local
+
+```bash
+git clone https://github.com/leonardos4enz/melody_maker_app
+cd melody_maker_app
+flutter pub get
+flutter run        # o flutter run -d chrome
